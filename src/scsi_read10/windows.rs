@@ -5,10 +5,10 @@ use std::fs::{self, File};
 use std::os::windows::io::AsRawHandle;
 use std::path::Path;
 use windows::Win32::Foundation::HANDLE;
-use windows::Win32::System::IO::DeviceIoControl;
 use windows::Win32::Storage::IscsiDisc::{
     IOCTL_SCSI_PASS_THROUGH_DIRECT, SCSI_IOCTL_DATA_IN, SCSI_PASS_THROUGH_DIRECT,
 };
+use windows::Win32::System::IO::DeviceIoControl;
 
 pub struct WindowsScsiDevice {
     file: File,

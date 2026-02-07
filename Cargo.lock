@@ -378,16 +378,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d"
 
 [[package]]
-name = "scsi-read10"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "bindgen",
- "nix",
- "windows",
-]
-
-[[package]]
 name = "serde"
 version = "1.0.228"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -458,11 +448,13 @@ name = "tcreate-expert-smart"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "bindgen",
  "binrw",
  "clap",
- "scsi-read10",
+ "nix",
  "serde",
  "serde_json",
+ "windows",
 ]
 
 [[package]]

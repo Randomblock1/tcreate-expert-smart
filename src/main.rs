@@ -1,8 +1,9 @@
+mod scsi_read10;
 mod tcreate_expert_smart;
 
 use anyhow::{bail, Context, Result};
 use clap::Parser;
-use scsi_read10::{PlatformScsiDevice, Read10Cdb, ScsiDevice};
+use crate::scsi_read10::{PlatformScsiDevice, Read10Cdb, ScsiDevice};
 use std::io::Cursor;
 use tcreate_expert_smart::SmartData;
 

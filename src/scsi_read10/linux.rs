@@ -4,7 +4,7 @@ use nix::sys::stat::Mode;
 use std::os::fd::{AsRawFd, OwnedFd};
 use std::path::Path;
 
-use crate::ScsiDevice;
+use super::ScsiDevice;
 
 #[allow(non_camel_case_types, non_upper_case_globals, non_snake_case)]
 mod sg {

@@ -1,5 +1,5 @@
 use super::ScsiDevice;
-use crate::block_reader::{open_readonly, read_read10};
+use super::block_reader::{open_readonly, read_read10};
 use anyhow::Result;
 use std::os::fd::OwnedFd;
 use std::path::Path;
