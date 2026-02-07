@@ -1,0 +1,19 @@
+[package]
+name = "tcreate-expert-smart"
+version = "0.1.0"
+edition = "2021"
+authors = ["Randomblock1 <randomblock1@pm.me>"]
+license = "MIT"
+repository = "https://github.com/randomblock1/tcreate-expert-smart"
+readme = "README.md"
+homepage = "https://randomblock1.com"
+keywords = ["utility", "smart"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "1.0"
+binrw = "0.15"
+clap = { version = "4.5", features = ["derive"] }
+scsi-read10 = { path = "scsi-read10" }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
